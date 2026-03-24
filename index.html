@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min Portfolio</title>
+  <meta
+    name="description"
+    content="타이포그래피 중심의 미니멀 웹 디자이너 포트폴리오"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">본문으로 바로가기</a>
+
+  <div class="page">
+    <!-- 공통 상단 내비게이션 -->
+    <header class="topbar reveal">
+      <a class="brand" href="index.html" aria-label="Min Portfolio home">
+        <span class="brand-text">MIN PORTFOLIO</span>
+      </a>
+      <nav class="menu" aria-label="주요 메뉴">
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/aube.d_graphic/" target="_blank" rel="noopener noreferrer">Insta</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- 메인 비주얼 -->
+      <section class="hero-image reveal reveal-delay" aria-label="Main visual">
+        <div class="hero-image-inner surface-art" id="home-hero">
+          <p>Selected work archive / 2026</p>
+        </div>
+      </section>
+
+      <!-- 대표 프로젝트 목록은 script.js 데이터로 렌더링 -->
+      <section class="work reveal" aria-labelledby="featured-projects-title">
+        <div class="section-head">
+          <h1 id="featured-projects-title">Selected Projects</h1>
+          <p class="section-note">Featured collection</p>
+        </div>
+        <div class="project-gallery" data-gallery="featured"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

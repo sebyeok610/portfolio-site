@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail - Min Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">본문으로 바로가기</a>
+
+  <div class="page">
+    <!-- 공통 상단 내비게이션 -->
+    <header class="topbar reveal">
+      <a class="brand" href="index.html" aria-label="Min Portfolio home">
+        <span class="brand-text">MIN PORTFOLIO</span>
+      </a>
+      <nav class="menu" aria-label="주요 메뉴">
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/aube.d_graphic/" target="_blank" rel="noopener noreferrer">Insta</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- 프로젝트 텍스트 정보 -->
+      <section class="detail-copy reveal reveal-delay">
+        <p class="detail-year" id="detail-year">2026</p>
+        <h1 class="detail-title" id="detail-title">Project Title</h1>
+        <p class="detail-summary" id="detail-summary">프로젝트 설명이 이 영역에 표시됩니다.</p>
+        <p class="detail-overview" id="detail-overview">프로젝트 개요</p>
+      </section>
+
+      <!-- 프로젝트 대표 비주얼 -->
+      <section class="detail-visual reveal">
+        <div class="detail-thumb surface-art" id="detail-thumb"></div>
+      </section>
+
+      <!-- 상세 이미지는 script.js 데이터로 렌더링 -->
+      <section class="detail-gallery reveal" id="detail-gallery-section" aria-label="Project detail images">
+        <div class="detail-gallery-grid" id="detail-gallery-grid"></div>
+      </section>
+
+      <nav class="detail-back reveal" aria-label="프로젝트 이동">
+        <a class="back-link back-link-prev" href="project.html" id="prev-link" aria-label="이전 프로젝트로 이동"></a>
+        <a class="back-link back-link-list" href="project.html" id="back-link">목록으로</a>
+        <a class="back-link back-link-next" href="project.html" id="next-link" aria-label="다음 프로젝트로 이동"></a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
