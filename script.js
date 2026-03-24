@@ -412,6 +412,7 @@ const projects = [
     summary: "포스터",
     overview: "",
     thumbClass: "thumb-stone",
+    thumbSrc: "assets/images/thumbs/Is.png",
     images: ["thumb-forest", "thumb-sand", "thumb-stone"],
     featured: true,
   },
