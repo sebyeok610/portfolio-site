@@ -520,7 +520,6 @@ const backLink = document.getElementById("back-link");
 const prevLink = document.getElementById("prev-link");
 const nextLink = document.getElementById("next-link");
 const homeHero = document.getElementById("home-hero");
-const brandLinks = document.querySelectorAll(".brand");
 
 function getThumbPath(slug) {
   return `${THUMB_BASE_PATH}/${slug}.png`;
@@ -850,27 +849,6 @@ function renderHomeHero() {
   );
 }
 
-function renderBrandLogo() {
-  brandLinks.forEach((brandLink) => {
-    const logoImage = createAssetImage(
-      getCommonPath("logo.svg"),
-      "Min Portfolio",
-      "brand-logo",
-      "eager"
-    );
-
-    logoImage.addEventListener(
-      "load",
-      () => {
-        brandLink.classList.add("has-logo");
-      },
-      { once: true }
-    );
-
-    brandLink.prepend(logoImage);
-  });
-}
-
 function setupBackLink() {
   if (!backLink) {
     return;
@@ -894,7 +872,6 @@ function setupBackLink() {
 
 renderProjectGalleries();
 bindProjectLinks();
-renderBrandLogo();
 renderHomeHero();
 renderProjectDetail();
 setupBackLink();
