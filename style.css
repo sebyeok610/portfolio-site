@@ -199,7 +199,7 @@ img {
 
 /* Home / list sections */
 .hero-image {
-  margin-top: 36px;
+  margin-top: var(--section-padding-top);
 }
 
 .hero-image-inner {
@@ -271,6 +271,10 @@ img {
 
 .work {
   padding-top: var(--work-padding-top);
+}
+
+main > .work:first-child {
+  padding-top: var(--section-padding-top);
 }
 
 .section-head {
