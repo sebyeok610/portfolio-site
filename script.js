@@ -853,7 +853,7 @@ function renderHomeHero() {
 function renderBrandLogo() {
   brandLinks.forEach((brandLink) => {
     const logoImage = createAssetImage(
-      getCommonPath("logo.png"),
+      getCommonPath("logo.svg"),
       "Min Portfolio",
       "brand-logo",
       "eager"
