@@ -785,7 +785,7 @@ function renderProjectDetail() {
     "eager"
   );
 
-  document.title = `${project.title} - Min Portfolio`;
+  document.title = `${project.title} - Aube Company`;
   document.getElementById("detail-title").textContent = project.title;
   document.getElementById("detail-year").textContent = project.year;
   document.getElementById("detail-summary").textContent = project.summary;
