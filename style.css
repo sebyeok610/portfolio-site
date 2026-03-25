@@ -248,6 +248,17 @@ img {
   letter-spacing: -0.02em;
 }
 
+.contact-email {
+  margin-top: 10px;
+}
+
+.contact-email a {
+  display: inline-block;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
 .work {
   padding-top: var(--work-padding-top);
 }
